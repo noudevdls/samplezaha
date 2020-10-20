@@ -1,0 +1,54 @@
+.zoom {
+  transition: 0.8s;
+}
+
+.zoom:hover {
+  transform: scale(0.97);
+}
+
+.container .zoom img {
+  width: 100%;
+  height: 370px;
+}
+
+.container .row .col .card .card-img-top {
+  width: 30rem;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .row{
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container .zoom img {
+    width: 90%;
+    height: auto;
+  }
+
+  .container .row .col .card .card-img-top {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container .zoom img {
+    width: 80%;
+    height: auto;
+  }
+
+
+  .container .row .col .card .card-img-top {
+    width: 15rem;
+  }
+}
+
+
+.show-less {
+  height: 4rem;
+  overflow: hidden;
+  padding: 1rem;
+}

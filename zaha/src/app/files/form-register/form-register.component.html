@@ -1,0 +1,116 @@
+<div class="container mt-3 mb-5">
+    
+    <div class="jumbotron">
+
+      <div class="text-center">
+        <h2 style="font-family: 'noto sans lao';"><strong>ຟອມສະໝັກພະນັກງານ</strong></h2>
+      </div>
+
+      <form [formGroup]="form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">First name:</label>
+          <input type="text" (input)="postdata.firstname=$event.target.value" class="form-control" formControlName="firstname" [ngClass]="{'is-invalid': form.get('firstname').touched && form.get('firstname').invalid}"  placeholder="Enter your first name" required>
+          <div class="invalid-feedback">
+            <div>First Name is required</div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Last name:</label>
+          <input type="text" (input)="postdata.lastname=$event.target.value" formControlName="lastname" [ngClass]="{'is-invalid': form.get('lastname').touched && form.get('lastname').invalid}" class="form-control" placeholder="Enter your last name" required>
+          <div class="invalid-feedback">
+            <div>Last Name is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Date of birth:</label>
+          <input type="date" (input)="postdata.birth_date=$event.target.value" formControlName="birth_date" [ngClass]="{'is-invalid': form.get('birth_date').touched && form.get('birth_date').invalid}" class="form-control" required>
+          <div class="invalid-feedback">
+            <div>Birth of Date is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label> 
+          <select class="custom-select" (input)="postdata.gender=$event.target.value" formControlName="gender" [ngClass]="{'is-invalid': form.get('gender').touched && form.get('gender').invalid}" required>
+            <option value="">Choose your gender....</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <div class="invalid-feedback">Gender is required</div>
+        </div>
+        
+        
+        <div class="form-group">
+          <label >Position:</label> 
+            <select class="custom-select" (input)="postdata.position=$event.target.value" formControlName="position" [ngClass]="{'is-invalid': form.get('position').touched && form.get('position').invalid}" required>
+              <option value="">Choose your position....</option>
+              <option selected>IT Support</option>
+            <option>Network System</option>
+            <option>Programer</option>
+            <option>Marketing</option>
+            <option>Accounting</option>
+            <option>Financial</option>
+          </select>
+          <div class="invalid-feedback">
+            <div>Position is required</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Phone:</label>
+          <input type="text" (input)="postdata.phonenumber=$event.target.value" formControlName="phonenumber" [ngClass]="{'is-invalid': form.get('phonenumber').touched && form.get('phonenumber').invalid}"  class="form-control" placeholder="Enter your phone number" required>
+          <div class="invalid-feedback">
+            <div>Phone Number is required</div>
+          </div>
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email:</label>
+          <input type="email" (input)="postdata.email=$event.target.value" formControlName="email" [ngClass]="{'is-invalid': form.get('email').touched && form.get('email').invalid}" class="form-control"  placeholder="Enter email" required>
+          <div class="invalid-feedback" *ngIf="form.get('email').touched && form.get('email').invalid">
+            <div *ngIf="form.get('email').errors.required">Email is required</div>
+            <div *ngIf="form.get('email').errors.email">Email must be a valid email Address</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Present address:</label>
+          <input type="text" (input)="postdata.present_address=$event.target.value" formControlName="present_address" [ngClass]="{'is-invalid': form.get('present_address').touched && form.get('present_address').invalid}" class="form-control" placeholder="Enter your present address" required>
+          <div class="invalid-feedback">
+            <div>Present address is required</div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">More detail:</label>
+          <textarea class="form-control"  (input)="postdata.more_detail=$event.target.value" maxlength="200" placeholder="Write for more details"></textarea>
+        </div>
+       
+        <button type="button" class="btn btn-primary" [disabled]="!form.valid" data-toggle="modal" data-target="#exampleModalCenter" (click)="save(postdata)">Register</button>
+      </form>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered bd-example-modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5>
+          <p style="font-family: 'noto sans lao';">ສະໝັກງານສຳເລັດແລ້ວ  <i style="font-size: 30px; color: rgb(102, 201, 3);" class="far fa-check-circle"></i></p>
+          <p style="font-family: 'noto sans lao';">ຈະມີທີມງານຕິດຕໍ່ໄປພາຍຫຼັງ</p>
+        </h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

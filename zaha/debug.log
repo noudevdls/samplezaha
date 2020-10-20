@@ -1,0 +1,5 @@
+[1014/095833.455:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1014/095833.543:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1014/100643.679:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1017/174440.943:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Nou Dalasene\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\d9e0c291-4e98-4b73-acb9-94d26b17c18d: The system cannot find the path specified. (0x3)
+[1017/174441.099:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

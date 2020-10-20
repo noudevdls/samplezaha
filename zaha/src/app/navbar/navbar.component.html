@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(24, 27, 36);">
+    <a class="navbar-brand" style="color: aliceblue;" href="#">
+      <img style="width: 40px; height: 40px; border-radius: 50%;" src="../../assets/images/logo.jpg">
+       <div class="title-text">
+        <p>ບໍລິສັດ ສະຫະທຣັສ ການຄ້າ ແລະ ບໍລິການ ຈຳກັດ</p>
+        <p style="margin-top: -17px;">Zaha Trust Trading & Service</p>
+       </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none;">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+      <ul class="nav navbar-nav navbar-right mr-5">
+        <li class="nav-item active ">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="cursor: pointer;">
+            <a class="dropdown-item"  (click)="goHistory()">History</a>
+            <a class="dropdown-item"  (click)="goVision()">Vision & Mission</a>
+            <a class="dropdown-item"  (click)="goMessage()">Message’s CEO</a>
+            <a class="dropdown-item"  (click)="goMeet()">Meet our CEO</a>
+            <a class="dropdown-item"  (click)="goOrganization()">Organization</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Business Activities
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="cursor: pointer;">
+            <a class="dropdown-item"  (click)="goImportExport()">ການນຳເຂົ້າ-ສົ່ງອອກ ສິນຄ້າ</a>
+            <a class="dropdown-item"  (click)="goDevlopEnergy()">ພັດທະນາທຸລະກິດພະລັງງານ</a>
+            <a class="dropdown-item"  (click)="goProvideTelecom()">ສະໜອງອຸປະກອນ ສື່ສານໂທລະຄົມ</a>
+            <a class="dropdown-item"  (click)="goTechnologySolution()">Technogy total solutions</a>
+            <a class="dropdown-item"  (click)="goOperation()">Project in construction</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            News
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="cursor: pointer;">
+            <a class="dropdown-item"  (click)="goNewsEmployee()">ການຮັບພະນັກງານ</a>
+            <a class="dropdown-item"  (click)="goNewsMeeting()">ການເຄື່ອນໄຫວຂອງບໍລິສັດ</a>
+          </div>
+        </li>
+       
+        <li class="nav-item active">
+          <a class="nav-link" style="cursor: pointer;" (click)="goContactPage()">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  

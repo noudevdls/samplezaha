@@ -1,0 +1,9 @@
+[1018/012544.103:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Nou Dalasene\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\373a8b90-186b-4dfe-9653-1fc7cebc7ac4: The system cannot find the path specified. (0x3)
+[1018/012751.754:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1018/095815.777:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1018/100308.158:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Nou Dalasene\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\07de4110-bd27-4497-8dd3-a6143b10f947: The system cannot find the path specified. (0x3)
+[1019/181052.898:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Nou Dalasene\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\4a57a10f-b9a8-4ccd-83a7-f65919eb2465: The system cannot find the path specified. (0x3)
+[1019/181053.195:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1020/125054.193:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1020/130055.231:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1020/131540.767:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Nou Dalasene\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\c2981ff4-e871-4342-82fb-1dbc2999ab39: The system cannot find the path specified. (0x3)
